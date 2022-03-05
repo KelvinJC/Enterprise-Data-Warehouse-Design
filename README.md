@@ -1,4 +1,4 @@
-# Enterprise-database-design
+# Enterprise Database Design
 
 
 ## Business Logic
