@@ -1,7 +1,8 @@
 # Enterprise-database-design
 
 
-Treasure House  (Treasure House) provides a variety of services for couples looking to get married. Couples can discuss the various options with a Treasure House wedding consultant, who will help them to choose the Treasure House services that meet their needs and budget. 
+## Business Logic
+Treasure House (Treasure House) provides a variety of services for couples looking to get married. Couples can discuss the various options with a Treasure House wedding consultant, who will help them to choose the Treasure House services that meet their needs and budget. 
 When a couple contracts with Treasure House to provide wedding services that is referred to as a “wedding”. For each wedding, the name of the wedding and initial date that a couple contracts with Treasure House is recorded. The name of the wedding is usually the last names of the couple. For example, when Lisa Wellington and Segun Cole contract with Treasure House, that would be named the “Wellington-Cole Wedding”. 
 Every wedding must have at least two people associated with it - the couple being married. Due to divorce it is possible for a person to be in more than one wedding couple over time. For each person in the wedding couple, the person’s name, address (street, city, state, zip code) and phone number are recorded. 
 
