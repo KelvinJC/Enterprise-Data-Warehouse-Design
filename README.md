@@ -43,8 +43,10 @@ Finally the total estimated cost of the wedding and the total actual cost of the
 ## ERD Logical Design (1st Iteration)
 ![](images/erd%20logic%20first%20step.png)
 <br>
+
 ## ERD Logical Design (2nd Iteration)
 ![](images/erd%20logic%20second.drawio.png)
 <br>
+
 ## ERD Physical Design
 ![](images/bigweddingiii.png)
