@@ -40,4 +40,5 @@ Finally the total estimated cost of the wedding and the total actual cost of the
 ### For the purpose of data privacy, all names of persons and business entities have been changed to fictitious ones.  
 
 
-images/erd%20logic%20first%20step.png
+![](images/erd%20logic%20first%20step.png)
+![](images/erd%20logic%20second.drawio.png)
