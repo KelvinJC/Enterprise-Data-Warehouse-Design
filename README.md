@@ -1,6 +1,6 @@
 # Enterprise Database Design
 
-Insight drawn from data is crucial to decision making within a business concern. It then follows that every business should have a store for its data. Databases serve the purpose as they serve for analytical as well as transactional purposes. For the business in question, I was given the task of with designing their database.  
+Insight drawn from data is crucial to decision making within a business concern. It then follows that every business should have a store for its data. Databases can be used for storage, analytical as well as transactional purposes. For the business in question, I was given the task of designing a database which would be used for the storage of relevant data on their clients, suppliers and services. 
 
 In the design of database the first step is usually to conduct a thorough analysis of the enterprise in question. Such analysis provides a view of the underlying business logic governing its operations.
 
