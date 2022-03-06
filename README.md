@@ -21,3 +21,10 @@ An entity can be a noun: person, place or thing. In an ER diagram, an entity is 
 
 ## ERD Physical Design
 ![](images/bigweddingiii.png)
+
+<br>
+<br>
+
+<br>
+
+## ** For the purpose of data privacy, all names of persons and business entities have been changed to fictional ones.
