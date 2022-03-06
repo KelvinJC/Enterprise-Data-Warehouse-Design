@@ -1,0 +1,49 @@
+
+CREATE TABLE IF NOT EXISTS contact (
+                        contact_id SMALLINT NOT NULL PRIMARY KEY,
+                        contact_description VARCHAR(20) NOT NULL,
+                        street VARCHAR(50) NULL,
+                        city VARCHAR(20) NULL,
+                        state VARCHAR(20) NULL
+                        zipcode INT NULL,
+                        email VARCHAR(50) NULL,
+                        phone VARCHAR(20) NULL
+                        );
+
+CREATE TABLE IF NOT EXISTS consultant (
+                        consultant_id SMALLINT NOT NULL PRIMARY KEY,
+                        first_name VARCHAR(20) NOT NULL,
+                        last_name VARCHAR(20) NOT NULL,
+                        contact_id SMALLINT NOT NULL,
+                        FOREIGN KEY (contact_id) REFERENCES contact (contact_id)
+                        );
+
+CREATE TABLE IF NOT EXISTS wedding (
+                        wedding_id SMALLINT NOT NULL PRIMARY KEY,
+                        wedding_name VARCHAR NOT NULL,
+                        contract_date DATE NOT NULL,
+                        consultant_id INTEGER NOT NULL,
+                        estimated_cost MONEY NOT NULL
+                        actual_cost MONEY NULL
+                        FOREIGN KEY (consultant_id) REFERENCES consultant (consultant_id)
+                        );
+
+CREATE TABLE IF NOT EXISTS client (
+                        client_id SMALLINT NOT NULL PRIMARY KEY,
+                        client_wedding_id SMALLINT NOT NULL,
+                        contact_id SMALLINT NOT NULL,
+                        first_name VARCHAR(20) NOT NULL,
+                        last_name VARCHAR(20) NOT NULL,
+                        FOREIGN KEY (client_wedding_id) REFERENCES client_wedding (client_wedding_id)
+                        FOREIGN KEY (contact_id) REFERENCES contact (contact_id)
+                        );
+
+CREATE TABLE IF NOT EXISTS client_wedding (
+                        wedding_id INTEGER NOT NULL PRIMARY KEY,
+                        wedding_name VARCHAR NOT NULL,
+                        contract_date DATE NOT NULL,
+                        consultant_id INTEGER NOT NULL,
+                        estimated_cost FLOAT NOT NULL
+                        actual_cost FLOAT NOT NULL
+                        FOREIGN KEY (consultant_id) REFERENCES consultant (consultant_id)
+                        );
