@@ -40,11 +40,11 @@ Finally the total estimated cost of the wedding and the total actual cost of the
 ### For the purpose of data privacy, all names of persons and business entities have been changed to fictitious ones.  
 
 
-## ERD Logical Design (1st Iteration)
+## ERD Logical Design (1st iteration)
 ![](images/erd%20logic%20first%20step.png)
 <br>
 
-## ERD Logical Design (2nd Iteration)
+## ERD Logical Design (2nd iteration)
 ![](images/erd%20logic%20second.drawio.png)
 <br>
 
