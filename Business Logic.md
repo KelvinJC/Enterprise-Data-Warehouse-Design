@@ -25,4 +25,4 @@ After an event is over, Treasure House wil take the information from the guest b
 
 Finally the total estimated cost of the wedding and the total actual cost of the wedding should be stored as redundant data.
 
-### For the purpose of data privacy, all names of persons and business entities have been changed to fictional ones. 
+### For the purpose of data protection, all names of persons and business entities have been changed to fictional ones. 
