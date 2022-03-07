@@ -11,15 +11,15 @@ The ER model is used as a tool to design relational databases. In the ER model, 
 An entity can be a noun: person, place or thing. In an ER diagram, an entity is drawn as a rectangle. Entities have attributes which are the data elements that characterize the entity. Attributes tell us more about the entity. In an ER diagram, attributes are drawn as ovals. 
 
 
-## ERD Logical Design (1st iteration)
+#### ENTITY RELATIONSHIP DATA MODEL (1st iteration)
 ![](images/erd%20logic%20first%20step.png)
 <br>
 
-## ERD Logical Design (2nd iteration)
+#### ENTITY RELATIONSHIP DATA MODEL (2nd iteration)
 ![](images/erd%20logic%20second.drawio.png)
 <br>
 
-## ERD Physical Design
+#### ENTITY RELATIONSHIP DIAGRAM 
 ![](images/bigweddingiii.png)
 
 <br>
