@@ -27,4 +27,4 @@ An entity can be a noun: person, place or thing. In an ER diagram, an entity is 
 
 <br>
 
-## ** For the purpose of data privacy, all names of persons and business entities have been changed to fictional ones.
+## ** For the purpose of data protection, all names of persons and business entities have been changed to fictional ones.
