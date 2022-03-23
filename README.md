@@ -1,6 +1,6 @@
 # Enterprise Data Warehouse Design
 
-Insight drawn from data is crucial to decision making within a business concern. It then follows that every business should have a store for its data. Databases can be used for storage of transaction data as well as for conducting reporting and analysis. For the business in question (Treasure House**), I was given the task of designing a data warehouse which would be used for the storage of relevant data on their clients, suppliers and services. 
+Insight drawn from data is crucial to decision making within a business concern. It then follows that every business should have a store for its data. Databases can be used for storage of business data and transactions as well as for conducting reporting and analysis. For the business in question (Treasure House**), I was given the task of designing a data warehouse which would be used for the storage of relevant data on their clients, suppliers and services. 
 
 #### Choice of data warehouse architecture
 In my design, I followed the Inmon data warehouse model. This architectural pattern follows a top-down approach where all business data is stored in a single repository and then flows through pipelines to different data marts which are specific to each business unit.
