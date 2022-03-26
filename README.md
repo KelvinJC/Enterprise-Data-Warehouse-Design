@@ -8,6 +8,10 @@ In my design, I followed the Inmon data warehouse model. This architectural patt
 #### Design process
 In the design of the database the first step is usually to conduct a thorough analysis of the enterprise in question. Such analysis provides a view of the underlying business rules governing its operations. [Click here to read the business rules of Treasure House](business_rules.md)
 
+
+Business rules.
+![](images/erd%20logic%20second.drawio.png)
+
 After the analysis is concluded. The next step is representing the business logic with an Entity Relational Data Model (ERD).
 
 The ER model is used as a tool to design relational databases. In the ER model, entities are objects that exist independently of any other entities in the database. The building blocks of an ER diagram are entities and attributes. 
