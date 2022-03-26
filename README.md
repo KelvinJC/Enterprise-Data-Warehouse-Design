@@ -8,11 +8,11 @@ Insight drawn from data is crucial to decision making within a business concern.
 ### Design process
 
 #### Business rules.
-In the design of the database the first step is usually to conduct a thorough analysis of the enterprise in question. Such analysis provides a view of the underlying business rules governing its operations.
+In the design of the database the first step is usually to conduct a thorough analysis of the enterprise in question. Such analysis provides a view of the underlying business rules governing its operations. The screenshot below shows some of the business rules followed in this project.
 
 ![](images/business%20rules%20screenshot.jpg)
 
- [Click here to read the full list of business rules of Treasure House](business_rules.md)
+ [Here's the full list of business rules of Treasure House](business_rules.md)
  
 
 #### Choice of data warehouse architecture.
@@ -25,15 +25,17 @@ The ER model is used as a tool to design relational databases. In the ER model, 
 An entity can be a noun: person, place or thing. In an ER diagram, an entity is drawn as a rectangle. Entities have attributes which are the data elements that characterize the entity. Attributes tell us more about the entity. In an ER diagram, attributes are drawn as ovals. 
 
 
-#### ENTITY RELATIONSHIP DATA MODEL (1st iteration)
+#### Entity Relationship Data Model (1st iteration)
 ![](images/erd%20logic%20first%20step.png)
 <br>
 
-#### ENTITY RELATIONSHIP DATA MODEL (2nd iteration)
+#### Entity Relationship Data Model (2nd iteration)
 ![](images/erd%20logic%20second.drawio.png)
 <br>
 
-#### ENTITY RELATIONSHIP DIAGRAM 
+#### Relational Schema
+Relational schema refers to the structure of data within a domain. It is the blueprint of a database which outlines the way data is organised into tables.
+
 ![](images/bigweddingiii.png)
 
 <br>
@@ -41,4 +43,4 @@ An entity can be a noun: person, place or thing. In an ER diagram, an entity is 
 
 <br>
 
-## ** For the purpose of data protection, all names of persons and business entities have been changed to fictional ones.
+#### ** For the purpose of data protection, all names of persons and business entities have been changed to fictional ones.
