@@ -1,5 +1,7 @@
 # Enterprise Data Warehouse Design
-![](images/db%20image.jpeg)
+<center>
+ <img src=images/db%20image.jpg>
+</center>
 
 Insight drawn from data is crucial to decision making within a business concern. It then follows that every business should have a store for its data. Databases can be used for storage of business data and transactions as well as for conducting analyses and reports. For the business in question (Treasure House**), I was given the task of designing a data warehouse which would be used for the storage of relevant data on their clients, suppliers and services. 
 
