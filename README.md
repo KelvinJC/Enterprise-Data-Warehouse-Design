@@ -49,4 +49,10 @@ Relational schema refers to the structure of data within a domain. It is the blu
 
 <br>
 
+### Tools:
+* PostgreSQL
+* Diagrams.net (formerly known as Draw.io)
+
+
+
 #### ** For the purpose of data protection, all names of persons and business entities have been changed to fictional ones.
