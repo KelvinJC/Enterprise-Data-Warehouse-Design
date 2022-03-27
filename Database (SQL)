@@ -34,16 +34,81 @@ CREATE TABLE IF NOT EXISTS client (
                         contact_id SMALLINT NOT NULL,
                         first_name VARCHAR(20) NOT NULL,
                         last_name VARCHAR(20) NOT NULL,
-                        FOREIGN KEY (client_wedding_id) REFERENCES client_wedding (client_wedding_id)
+                        FOREIGN KEY (client_wedding_id) REFERENCES client_wedding (client_wedding_id),
                         FOREIGN KEY (contact_id) REFERENCES contact (contact_id)
                         );
 
 CREATE TABLE IF NOT EXISTS client_wedding (
-                        wedding_id INTEGER NOT NULL PRIMARY KEY,
-                        wedding_name VARCHAR NOT NULL,
-                        contract_date DATE NOT NULL,
-                        consultant_id INTEGER NOT NULL,
-                        estimated_cost FLOAT NOT NULL
-                        actual_cost FLOAT NOT NULL
-                        FOREIGN KEY (consultant_id) REFERENCES consultant (consultant_id)
+                        client_wedding_id INTEGER NOT NULL PRIMARY KEY,
+                        wedding_id INTEGER NOT NULL,
+                        client_id INTEGER NOT NULL,
+                        FOREIGN KEY (wedding_id) REFERENCES wedding (wedding_id),
+                        FOREIGN KEY (client_id) REFERENCES client (client_id)
+                        );
+
+CREATE TABLE IF NOT EXISTS event (
+                        event_id INTEGER NOT NULL PRIMARY KEY,
+                        event_name VARCHAR NOT NULL,
+                        event_type VARCHAR NOT NULL,
+                        beginning_date DATE NOT NULL,
+                        beginning_time TIMESTAMP NOT NULL,
+                        ending_date DATE NOT NULL,
+                        ending_time TIMESTAMP NOT NULL,
+                        description VARCHAR NOT NULL,
+                        wedding_id INTEGER NOT NULL,
+                        location_id VARCHAR NULL,
+                        FOREIGN KEY (wedding_id) REFERENCES wedding (wedding_id),
+                        FOREIGN KEY (location_id) REFERENCES location (location_id)
+                        );
+
+CREATE TABLE IF NOT EXISTS location (
+                        location_id INTEGER NOT NULL PRIMARY KEY,
+                        name VARCHAR NOT NULL,
+                        type VARCHAR NOT NULL,
+                        address VARCHAR NOT NULL
+                        );
+
+CREATE TABLE IF NOT EXISTS guest_attendance (
+                        attendance_id INTEGER NOT NULL PRIMARY KEY,
+                        event_id INTEGER NOT NULL,
+                        first_name VARCHAR NOT NULL,
+                        last_name VARCHAR NOT NULL,
+                        is_invited BOOLEAN NOT NULL,
+                        contact_id INTEGER NOT NULL,
+                        FOREIGN KEY (event_id) REFERENCES event (event_id),
+                        FOREIGN KEY (contact_id) REFERENCES contact (contact_id)
+                        );
+
+CREATE TABLE IF NOT EXISTS guest_invited (
+                        invitation_id INTEGER NOT NULL PRIMARY KEY,
+                        event_id INTEGER NOT NULL,
+                        first_name VARCHAR NOT NULL,
+                        last_name VARCHAR NOT NULL,
+                        is_attended BOOLEAN NULL,
+                        contact_id INTEGER NOT NULL,
+                        FOREIGN KEY (event_id) REFERENCES event (event_id),
+                        FOREIGN KEY (contact_id) REFERENCES contact (contact_id)
+                        );
+
+CREATE TABLE IF NOT EXISTS service_selection (
+                        selection_id INTEGER NOT NULL PRIMARY KEY,
+                        service_id INTEGER NOT NULL,
+                        event_id INTEGER NOT NULL,
+                        FOREIGN KEY (event_id) REFERENCES event (event_id),
+                        FOREIGN KEY (service_id) REFERENCES service (service_id)
+                        );
+
+CREATE TABLE IF NOT EXISTS service (
+                        service_id INTEGER NOT NULL PRIMARY KEY,
+                        name VARCHAR NOT NULL,
+                        type VARCHAR NOT NULL,
+                        description VARCHAR NOT NULL
+                        );
+
+CREATE TABLE IF NOT EXISTS service_schedule (
+                        schedule_id INTEGER NOT NULL PRIMARY KEY,
+                        scheduled_contractor_id INTEGER NOT NULL,
+                        actual_contractor INTEGER NOT NULL,
+                        FOREIGN KEY (event_id) REFERENCES event (event_id),
+                        FOREIGN KEY (service_id) REFERENCES service (service_id)
                         );
