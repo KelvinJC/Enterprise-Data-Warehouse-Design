@@ -1,4 +1,4 @@
-# Enterprise Data Warehouse Design
+# Enterprise Database Design
 ![](images/db%20image.jpg)
 
 
