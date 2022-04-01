@@ -43,6 +43,11 @@ Relational schema refers to the structure of data within a domain. It is the blu
 
 #### (2nd iteration)
 ![](images/bigweddingiv.png)
+
+
+#### (3rd iteration)
+![](images/bigweddingv.png)
+
 <br>
 <br>
 
