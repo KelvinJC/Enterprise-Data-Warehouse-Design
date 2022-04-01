@@ -125,8 +125,6 @@ CREATE TABLE IF NOT EXISTS service_contract (
 CREATE TABLE IF NOT EXISTS contractor (
                         contractor_id CHAR(10) NOT NULL PRIMARY KEY,
                         company_name VARCHAR NOT NULL,
-                        service_contract_id CHAR(10) NOT NULL,
                         contact_id CHAR(10) NOT NULL,
-                        FOREIGN KEY (service_contract_id) REFERENCES service_contract (service_contract_id),
                         FOREIGN KEY (contact_id) REFERENCES contact (contact_id)
                         );
