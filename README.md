@@ -4,7 +4,7 @@
 
 
 ### Introduction
-Insight drawn from data is crucial to decision making within a business concern. It then follows that every business should have a store for its data. Databases can be used for storage of business data and transactions as well as for conducting analyses and reports. For the business in question (Treasure House**), I was given the task of designing a data warehouse which would be used for the storage of relevant data on their clients, suppliers and services.
+Insight drawn from data is crucial to decision making within a business concern. Every business should have a store for its data. Databases can be used for storage of business data and transactions as well as for conducting analyses and reports. For the business in question (Treasure House**), the database would be used for the storage of client data, contract data of suppliers and services.
 
 ### Design process
 
@@ -16,11 +16,8 @@ In the design of the database the first step is usually to conduct a thorough an
  [Here's the full list of business rules of Treasure House](business_rules.md)
 
 
-#### Choice of data warehouse architecture.
-In my design, I followed the Inmon data warehouse model. This architectural pattern follows a top-down approach where all business data is stored in a single repository and then flows through pipelines to different data marts which are specific to each business unit.
-
 #### Entity relationship
-After the analysis is concluded to yield th business rules, we can deduce the business logic and represent that with an Entity Relational Data Model (ERD).
+After the analysis is concluded to yield the business rules, we can represent the findings with an Entity Relational Data Model (ERD).
 The ER model is used as a tool to design relational databases. In the ER model, entities are objects that exist independently of any other entities in the database. The building blocks of an ER diagram are entities and attributes.
 
 An entity can be a noun: person, place or thing. In an ER diagram, an entity is drawn as a rectangle. Entities have attributes which are the data elements that characterize the entity. Attributes tell us more about the entity. In an ER diagram, attributes are drawn as ovals.
