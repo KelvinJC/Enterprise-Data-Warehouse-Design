@@ -1,4 +1,4 @@
-# Enterprise Database Design
+# Database Design
 ![](images/db%20image.jpg)
 
 
